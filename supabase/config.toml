@@ -1,0 +1,4 @@
+# Edge Function does its own authentication (login must be reachable without a token),
+# so the platform-level JWT check is off for this one function.
+[functions.api]
+verify_jwt = false
